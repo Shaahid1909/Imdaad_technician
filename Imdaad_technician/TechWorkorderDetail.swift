@@ -72,8 +72,7 @@ class TechWorkorderDetail: UIViewController {
         super.viewDidLoad()
    
         sgTextOnlyBar.selectorType = .bottomBar
-        sgTextOnlyBar.SelectedFont = UIFont(name: "ChalkboardSE-Bold", size: 15)!
-        sgTextOnlyBar.normalFont = UIFont(name: "ChalkboardSE-Regular", size: 15)!
+     
         dropView.isHidden = true
         dropBtn.layer.borderWidth = 0.3
         dropBtn.layer.borderColor = UIColor.black.cgColor
@@ -172,10 +171,14 @@ class TechWorkorderDetail: UIViewController {
             }
             
             task.resume()
-            let alertController = UIAlertController(title:"",message:"Status Submitted Successfully",preferredStyle:.alert)
-            self.present(alertController,animated:true,completion:{Timer.scheduledTimer(withTimeInterval: 2, repeats:false, block: {_ in
-                self.dismiss(animated: true, completion: nil)
-            })})
+            let alert = UIAlertController(title: "", message: "Status Updated Successfully", preferredStyle: .alert)
+            let OKAction = UIAlertAction(title: "OK",style:UIAlertAction.Style.default, handler: {
+            (_)in
+                 self.performSegue(withIdentifier: "unwindToHome", sender: self)
+             })
+         
+            alert.addAction(OKAction)
+           self.present(alert, animated: true, completion: nil)
             
         }else{
         let request = NSMutableURLRequest(url: NSURL(string: "https://appstudio.co/iOS/imdaad_technician_status_update.php")! as URL)
@@ -196,11 +199,14 @@ class TechWorkorderDetail: UIViewController {
      //  self.refreshresponse()
         }
         task.resume()
-        let alertController = UIAlertController(title:"",message:"Status Submitted Successfully",preferredStyle:.alert)
-        self.present(alertController,animated:true,completion:{Timer.scheduledTimer(withTimeInterval: 2, repeats:false, block: {_ in
-            self.dismiss(animated: true, completion: nil)
-        })})
-        
+            let alert = UIAlertController(title: "", message: "Technician Assigned Sucessfully", preferredStyle: .alert)
+            let OKAction = UIAlertAction(title: "OK",style:UIAlertAction.Style.default, handler: {
+            (_)in
+                 self.performSegue(withIdentifier: "unwindToHome", sender: self)
+             })
+         
+            alert.addAction(OKAction)
+           self.present(alert, animated: true, completion: nil)
     }
     }
     

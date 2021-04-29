@@ -26,6 +26,13 @@ class TechnicianHomeVc: UIViewController,UITableViewDelegate,UITableViewDataSour
     @IBOutlet weak var tabView: UITableView!
     @IBOutlet weak var filterVieww: UIView!
     @IBOutlet weak var sgTextOnlyBar: WMSegment!
+    
+    
+    @IBAction func unwindToMenu1(segue: UIStoryboardSegue) {
+             
+    }
+    
+    
     @IBAction func notificationTapped(_ sender: Any) {
         performSegue(withIdentifier: "notify", sender: self)
     }
