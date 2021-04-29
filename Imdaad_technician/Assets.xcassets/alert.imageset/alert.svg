@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>alert</title>
+    <g id="alert" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-5" transform="translate(2.000000, 2.000000)">
+            <circle id="Oval" fill="#CF3D3D" cx="8" cy="8" r="8"></circle>
+            <g id="iconfinder_high_priority_2639834" transform="translate(7.000000, 3.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                <path d="M1.634104,0.642 L1.505704,6.42 L0.206296,6.42 L0.077896,0.642 L1.634104,0.642 Z M0.857926,9.751338 C0.32635,9.751338 0.00856,9.468216 0.00856,8.992494 C0.00856,8.507784 0.325708,8.224662 0.857926,8.224662 C1.38565,8.224662 1.702798,8.507784 1.702798,8.992494 C1.702798,9.468216 1.38565,9.751338 0.857926,9.751338 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

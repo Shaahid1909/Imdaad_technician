@@ -1,0 +1,6 @@
+framework module Pods_Imdaad_technician {
+  umbrella header "Pods-Imdaad_technician-umbrella.h"
+
+  export *
+  module * { export * }
+}
